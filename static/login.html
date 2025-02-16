@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <label> 
+        user_id:
+        <input type="text" id="user_id">
+    </label>
+    <button onclick="submit()">Login</button>
+    <script>
+        valid_user_ids = ["test1", "S2xZ7v", "n9BcN4", "R4jR8q", "7aVfT2", "M1sQ9w", "8dXmP5", "B3gS6b", "f6DvZ9", "O9tR4e", "3pWcY7", "q7QjK1", "T5xV3g", "4oFzH6", "H1uG8d", "W9wMvC", "C6yT9s", "V4qRwK", "z2xZ7v", "b9BcN4", "G4jR8q"];
+        function submit() {
+            var userId = document.getElementById("user_id").value;
+            if (userId === "") {
+                alert("Error: Please enter a user ID.");
+            } else {
+                window.location.href = "index.html?user_id=" + userId;
+            }
+        }
+    </script>
+</body>
+</html>

@@ -5,6 +5,9 @@ from assistants.template import TemplateAssistant
 from main import *
 from messages import Messages
 from tools import MemoryTool
+from dotenv import load_dotenv
+
+load_dotenv()
 
 #THIS IS THE MOST IMPORTANT PART
 @app.websocket("/ws/{user_id}")
